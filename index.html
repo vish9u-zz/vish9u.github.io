@@ -27,6 +27,19 @@
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
 	     
+	 .column {
+  float: left;
+  width: 50%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+	     
      </style>
 </head>
 <body>
@@ -37,9 +50,14 @@
 
         <div id="contact-info" class="vcard">
             <h1 class="fn">Chalavadi Vishnu</h1>
-		
-	<img src="iith_logo.jpg" alt="iith" id="pic" style="width:50;height:50;">
-	<img src="vigil_logo.png" alt="vigil" id="pic" style="width:50;height:50;">
+	<div class="row">
+  <div class="column">
+	<img src="iith_logo.jpg" alt="iith" id="pic" style="width:50px;height:50px;"> 
+	    </div>
+		 <div class="column">
+	<img src="vigil_logo.png" alt="vigil" id="pic" style="width:50px;height:50px;">
+			 </div>
+		</div>
 
             <p>
                 Email: <a class="email" href="mailto:cs16m18p000001@iith.ac.in">cs16m18p000001@iith.ac.in</a>
