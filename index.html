@@ -27,17 +27,18 @@
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
 	     
-	 .column {
-  float: left;
-  width: 50%;
-  padding: 2px;
+	 .container{
+    width: 100px;
+    margin-left: 10px;
+    float: left;
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+img{
+    width: 100px;
+    height:100px;
+    float: left;
+}
+.text{
+    text-align:center;
 }
 	     
      </style>
@@ -51,13 +52,13 @@
         <div id="contact-info" class="vcard">
 		<h1 class="fn">Chalavadi Vishnu</h1> </br>
 	    
-	<div class="row">
- 	 <div class="column">
-		<img src="iith_logo.jpg" alt="iith" id="pic" style="width:100px;height:100px;"> 
-	    </div>
-	 <div class="column">
-		<img src="vigil_logo.png" alt="vigil" id="pic" style="width:100px;height:100px;">
-	    </div>
+	<div class="container">
+ 	 <div class="img">
+		<img src="iith_logo.jpg"> </div>
+		<div class="text">IITH</div>
+	 <div class="img">
+		<img src="vigil_logo.png"></div>
+		<div class="text">VIGIL</div>
 	    </div>
 
             <p>
